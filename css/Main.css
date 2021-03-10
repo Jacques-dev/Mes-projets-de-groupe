@@ -1,0 +1,109 @@
+
+
+@import url("color.css");
+
+html, body {
+  position: relative;
+  font-size: 14px;
+  margin: 0 !important;
+  padding: 0;
+  color: var(--noir);
+  height: 100%;
+}
+
+#LoginRegisterButton {
+  margin: 0;
+}
+
+.popupLoginLogoutButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.popupRegisterButton {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  z-index: 1;
+}
+
+#popupLogin {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#popupRegister {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#head-column {
+  background-color: #63d55f;
+  height: 5vh;
+}
+
+#left-column {
+  background-color: #5f98d5;
+  height: 95vh;
+}
+
+#middle-column {
+  background-color: #ffffff;
+  height: 95vh;
+}
+
+#right-column {
+  background-color: #d55f5f;
+  height: 95vh;
+}
+
+#cookies {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+#debuger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.chooseProject {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 25px;
+}
+
+.chooseProject:hover {
+  color: #27acea;
+  text-decoration: underline;
+}
+
+.deleteProject {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  text-decoration: none;
+  cursor: pointer;
+  color: #dd4141;
+}
+
+.deleteProject:hover {
+  color: #a83535;
+}

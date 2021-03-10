@@ -1,0 +1,246 @@
+
+@import url("color.css");
+
+.btn-1 {
+  --background: #06c;
+  --background-hover: #b70629;
+  --text: #fff;
+  --icon: #fff;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  min-width: 113px;
+  padding: 0.5rem 1.25rem 0.5rem 0.875rem;
+  border-radius: 4px;
+  line-height: 24px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  overflow: hidden;
+  color: var(--text);
+  background: var(--b, var(--background));
+  transition: transform 0.3s, background 0.4s;
+  transform: scale(var(--scale, 1)) translateZ(0);
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+.btn-1:active {
+  --scale: .95;
+}
+.btn-1:hover {
+  --b: var(--background-hover);
+}
+.btn-1 .icon,
+.btn-1 span {
+  display: inline-block;
+  vertical-align: top;
+  transform: translateZ(0);
+}
+.btn-1 .icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 1;
+  margin-right: 8px;
+  color: var(--text);
+}
+.btn-1 .icon svg {
+  width: 96px;
+  height: 96px;
+  display: block;
+  position: absolute;
+  left: -36px;
+  top: -36px;
+  will-change: transform;
+  fill: var(--icon);
+  transform: scale(0.254) translateZ(0);
+  -webkit-animation: var(--name, var(--name-top, none)) 2200ms ease forwards;
+          animation: var(--name, var(--name-top, none)) 2200ms ease forwards;
+}
+.btn-1 .icon svg.bottom {
+  --name: var(--name-bottom, none);
+}
+.btn-1 span {
+  -webkit-animation: var(--name-text, none) 2200ms ease forwards;
+          animation: var(--name-text, none) 2200ms ease forwards;
+}
+.btn-1.delete {
+  --name-top: trash-top;
+  --name-bottom: trash-bottom;
+  --name-text: text;
+}
+
+@-webkit-keyframes trash-bottom {
+  25%, 32% {
+    transform: translate(32px, 19px) scale(1) translateZ(0);
+  }
+  70%, 80% {
+    transform: translate(32px, 0) scale(0.254) translateZ(0);
+  }
+  100% {
+    transform: scale(0.254) translateZ(0);
+  }
+}
+
+@keyframes trash-bottom {
+  25%, 32% {
+    transform: translate(32px, 19px) scale(1) translateZ(0);
+  }
+  70%, 80% {
+    transform: translate(32px, 0) scale(0.254) translateZ(0);
+  }
+  100% {
+    transform: scale(0.254) translateZ(0);
+  }
+}
+@-webkit-keyframes trash-top {
+  25%, 32% {
+    transform: translate(38px, 4px) scale(1) rotate(-20deg) translateZ(0);
+  }
+  70%, 80% {
+    transform: translate(32px, 0) scale(0.254) translateZ(0);
+  }
+  100% {
+    transform: scale(0.254) translateZ(0);
+  }
+}
+@keyframes trash-top {
+  25%, 32% {
+    transform: translate(38px, 4px) scale(1) rotate(-20deg) translateZ(0);
+  }
+  70%, 80% {
+    transform: translate(32px, 0) scale(0.254) translateZ(0);
+  }
+  100% {
+    transform: scale(0.254) translateZ(0);
+  }
+}
+@-webkit-keyframes text {
+  25% {
+    transform: translate(-4px, -4px) rotate(-20deg) translateZ(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-12px, 48px) rotate(-80deg) scale(0.2) translateZ(0);
+  }
+  71% {
+    opacity: 0;
+  }
+  72%, 90% {
+    opacity: 0;
+    transform: translateZ(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes text {
+  25% {
+    transform: translate(-4px, -4px) rotate(-20deg) translateZ(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-12px, 48px) rotate(-80deg) scale(0.2) translateZ(0);
+  }
+  71% {
+    opacity: 0;
+  }
+  72%, 90% {
+    opacity: 0;
+    transform: translateZ(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-2 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+
+}
+.btn-2 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-2:before,
+.btn-2:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-2:hover:before {
+  height: 100%;
+}
+.btn-2:hover:after {
+  width: 100%;
+}
+.btn-2 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-2 span:before,
+.btn-2 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-2 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-2 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-2 span:hover:before {
+  height: 100%;
+}
+.btn-2 span:hover:after {
+  width: 100%;
+}

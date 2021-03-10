@@ -1,0 +1,91 @@
+
+
+@import url("color.css");
+
+.calendar {
+  position: relative;
+}
+
+.calendar__table {
+  width: 100%;
+  height: calc(95vh - 49px);
+}
+
+.calendar__table td {
+  padding: 10px;
+  border: 1px solid #CCC;
+  vertical-align: top;
+  width: 14.29%;
+  height: 20%;
+}
+
+.calendar__table td.is-today {
+  background-color: #f3f3f3;
+  border: 2px solid #939393;
+}
+
+.calendar__table--6weeks td {
+  height: 16.66% !important;
+}
+
+.calendar__weekday {
+  font-weight: bold;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.calendar__day {
+  font-style: 1.3em;
+  width: auto;
+}
+
+.calendar__othermonth .calendar__day {
+  opacity: 0.3;
+}
+
+.calendar__button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: #007bff;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 #0000001a, 0 1px 18px 0 #0000001a, 0 3px 5px -1px #0003;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.calendar__button:hover {
+  text-decoration: none;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.calendar__button2 {
+  float: right;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  background-color: #007bff;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 #0000001a, 0 1px 18px 0 #0000001a, 0 3px 5px -1px #0003;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.calendar__button2:hover {
+  text-decoration: none;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+#jours-event-loop {
+  display: none;
+}
