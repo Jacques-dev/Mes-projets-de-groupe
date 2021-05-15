@@ -20,8 +20,12 @@
     <div class="col-lg-12">
       <form action="fonctions/ProjectQueries.php" method="post">
         Ajouter des collègues
-        <br><input type="text" name="emailCollegue" placeholder="Email">
-        <input type="submit" name="submitCollegue" value="Ajouter">
+        <br>
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Email" name="emailCollegue" id='emailCollegue' required />
+          <label for="emailCollegue" class="form__label">Email</label>
+        </div>
+        <button class="custom-btn btn-1" type='submit' name='submitCollegue'><span>Ajouter <i class="far fa-plus-square"></i></span></button>
       </form>
     </div>
   </div>

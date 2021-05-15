@@ -5,7 +5,7 @@
   if (isset($_SESSION["email"])) {
 ?>
   <form action="fonctions/LoginRegister.php" method="post" id="LoginRegisterButton">
-    <button type="submit" class="popupLoginLogoutButton" name="logout">logout</button>
+    <button class="popupLoginLogoutButton raise btn-2" type='submit' name='logout'><span>Logout <i class="fas fa-sign-out-alt"></i></span></button>
   </form>
 <?php
   } else {
